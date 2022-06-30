@@ -23,8 +23,10 @@ choices.each do |choice|
   table << choice
 end
 
+puts table.render(:ascii, alignments: [:center, :left])
+
 c_number = 1
-input = prompt.select(table.render(:ascii, alignments: [:center, :left])) do |menu|
+input = prompt.select("Please select the product you would like more information about") do |menu|
   choices.each do |u_choice|
     menu.choice u_choice, c_number
     c_number += 1
