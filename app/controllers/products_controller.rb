@@ -12,14 +12,15 @@ class ProductsController < ApplicationController
 
   def create
     product = Product.new(
-      name: "Kangaroo"
-      price: 589
-      image_url: "https://i.pinimg.com/originals/e6/a3/7e/e6a37e83aa99dbb409e54767d7ea9aa7.jpg"
-      description: "A boxing Kangaroo straight from the outback (Boxing gloves included)"
+      name: params["name"],
+      price: params["price"],
+      image_url: params["image_url"],
+      description: params["description"],
     )
 
     product.save
-    render :json product.as_json
+    render json: product.as_json
+  end
 
 
 end
