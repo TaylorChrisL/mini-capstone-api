@@ -17,3 +17,16 @@ Content-Type: application/json
   "image_url": "https://cdn.britannica.com/09/74609-050-21E14E52/example-museum-replica-species-Canadian-de-extinction.jpg",
   "description": "The last mammoth on earth"
 }
+
+### Products Update
+
+PATCH http://localhost:3000/products/25.json
+Content-Type: application/json
+
+{
+  "price": "399"
+}
+
+### Products Delete
+
+DELETE http://localhost:3000/products/27.json
