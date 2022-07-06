@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  resources :products, defaults: { format: :json }
+
   get "/products" => "products#index"
 
   get "/products/:id" => "products#show"
