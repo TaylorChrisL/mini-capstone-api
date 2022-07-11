@@ -12,7 +12,7 @@ POST http://localhost:3000/products
 Content-Type: application/json
 
 {
-  "name": "Mammoth",
+  "name": "",
   "price": "1750",
   "image_url": "https://cdn.britannica.com/09/74609-050-21E14E52/example-museum-replica-species-Canadian-de-extinction.jpg",
   "description": "The last mammoth on earth"
@@ -20,13 +20,45 @@ Content-Type: application/json
 
 ### Products Update
 
-PATCH http://localhost:3000/products/25
+PATCH http://localhost:3000/products/3
 Content-Type: application/json
 
 {
-  "price": "399"
+  "price": "-399"
 }
 
 ### Products Delete
 
-DELETE http://localhost:3000/products/27
+DELETE http://localhost:3000/products/9
+
+### suppliers Index
+
+GET http://localhost:3000/suppliers
+
+### suppliers Show
+
+GET http://localhost:3000/suppliers/2
+
+### suppliers create
+
+POST http://localhost:3000/suppliers
+Content-Type: application/json
+
+{
+  "name": "",
+  "email": "1750",
+  "phone_number": "444-444-4444"
+}
+
+### suppliers Update
+
+PATCH http://localhost:3000/suppliers/3
+Content-Type: application/json
+
+{
+  "phone_number": "121-212-1212"
+}
+
+### suppliers Delete
+
+DELETE http://localhost:3000/suppliers/9

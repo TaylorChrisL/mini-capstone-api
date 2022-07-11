@@ -10,3 +10,5 @@ Product.create!([
   {name: "Mammoth", price: "1750.0", image_url: "https://cdn.britannica.com/09/74609-050-21E14E52/example-museum-replica-species-Canadian-de-extinction.jpg", description: "The last mammoth on earth", quantity: nil},
   {name: "Kangaroo", price: "399.0", image_url: "https://i.pinimg.com/originals/e6/a3/7e/e6a37e83aa99dbb409e54767d7ea9aa7.jpg", description: "A boxing Kangaroo straight from the outback (Boxing gloves included)", quantity: nil}
 ])
+
+Supplier.create([{name: "Africa", email: "africa@africa.com", phone_number: "111-111-1111"}, {name: "Australia", email: "australia@australia.com", phone_number: "222-222-2222"}, {name: "Other place", email: "otherplace@aol.com", phone_number: "333-333-3333"}])
