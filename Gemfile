@@ -48,4 +48,6 @@ end
 
 gem 'jb'
 
+gem 'jwt'
+
 gem 'seed_dump'

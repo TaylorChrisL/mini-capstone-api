@@ -5,5 +5,6 @@ Rails.application.routes.draw do
   resources :images, defaults: { format: :json }
 
   post "/users" => "users#create", default: { fortmat: :json }
+  post "/sessions" => "sessions#create", default: { format: :json }
   
 end
