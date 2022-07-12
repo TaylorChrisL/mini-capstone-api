@@ -84,3 +84,15 @@ Content-Type: application/json
 {
   "product_id": "1"
 }
+
+### User creates
+
+POST http://localhost:3000/users
+Content-Type: application/json
+
+{
+  "name": "Test name",
+  "email": "test@test.com",
+  "password": "password",
+  "password_confirmation": "password"
+}
