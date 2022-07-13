@@ -106,3 +106,22 @@ Content-Type: application/json
   "email": "test2@test.com",
   "password": "password"
 }
+
+### Orders Index
+
+GET http://localhost:3000/orders
+
+### Orders Show
+GET http://localhost:3000/orders/3
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTc4MTkxODF9.nGUrakzrfMRM67PXnGScC06y6wshxhwW3Cen25ilsyg
+
+### Orders create
+
+POST http://localhost:3000/orders
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTc4MTkxODF9.nGUrakzrfMRM67PXnGScC06y6wshxhwW3Cen25ilsyg
+Content-Type: application/json
+
+{
+  "product_id": "1",
+  "quantity": "1"
+}

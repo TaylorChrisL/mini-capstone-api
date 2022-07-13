@@ -6,6 +6,8 @@ Rails.application.routes.draw do
 
   post "/users" => "users#create", default: { fortmat: :json }
   post "/sessions" => "sessions#create", default: { format: :json }
-  post "/orders" => "orders#create", default { format: :json }
+
+  resources :orders, defaults: { format: :json}
+  # post "/orders" => "orders#create", defaul: { format: :json }
   
 end
