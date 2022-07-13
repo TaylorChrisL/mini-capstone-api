@@ -1,6 +1,7 @@
 ### Products Index
 
 GET http://localhost:3000/products
+Authorization: Bearer eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTc3MzU1NzV9.koF7TLL5QX6MAHS4pX8Lg90kEqXt5qsXeZ34LWtcSUU
 
 ### Products Show
 
@@ -102,6 +103,6 @@ POST http://localhost:3000/sessions
 Content-Type: application/json
 
 {
-  "email": "test4@test.com",
+  "email": "test2@test.com",
   "password": "password"
 }
