@@ -3,6 +3,7 @@ class OrdersController < ApplicationController
 
   def index
     @orders = current_user.orders
+    # @orders = Order.all
     render :index
   end
 
