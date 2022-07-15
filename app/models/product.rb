@@ -5,6 +5,8 @@ class Product < ApplicationRecord
   # validates :image_url, format: { with: %r{.(gif|jpg|png)\Z}i, message: 'must be a URL for GIF, JPG or PNG image.' } # use gem 'fast image' for actual image verification instead of just .(proper extension)
   has_many :images
   has_many :orders
+  has_many :category_products
+  has_many :categories, through: :category_products
   belongs_to :supplier
 
   def friendly_created_at

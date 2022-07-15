@@ -10,6 +10,7 @@
     tax: product.tax,
     total: product.total,
     supplier: product.supplier,
+    categorys: product.categories,
     created_at: product.created_at,
     updated_at: product.updated_at
   }
