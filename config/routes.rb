@@ -7,7 +7,8 @@ Rails.application.routes.draw do
   post "/users" => "users#create", default: { fortmat: :json }
   post "/sessions" => "sessions#create", default: { format: :json }
 
-  resources :orders, defaults: { format: :json}
+  resources :orders, defaults: { format: :json }
   # post "/orders" => "orders#create", defaul: { format: :json }
+  resources :carted_products, defaults: { format: :json }
   
 end

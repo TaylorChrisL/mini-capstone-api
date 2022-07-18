@@ -1,4 +1,6 @@
-@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTc4MjYwOTl9.ZxG3Q8nSJquAmfdHZ8hFlVAK-YTiqGLmWBAFQUCiNeg
+@jwt = eyJhbGciOiJIUzI1NiJ9.eyJ1c2VyX2lkIjoyLCJleHAiOjE2NTgyNTMyMjF9.NRHg6WuDV0-bsCPPs6RuufraQKbCCwMLW8p1IcQgepQ
+
+
 ### Products Index
 
 GET http://localhost:3000/products
@@ -124,6 +126,27 @@ Authorization: Bearer {{jwt}}
 Content-Type: application/json
 
 {
+  "product_id": "1",
+  "quantity": "1"
+}
+
+### carted_products Index
+
+GET http://localhost:3000/carted_products
+Authorization: Bearer {{jwt}}
+
+### carted_products Show
+GET http://localhost:3000/carted_products/1
+Authorization: Bearer {{jwt}}
+
+### carted_products create
+
+POST http://localhost:3000/carted_products
+Authorization: Bearer {{jwt}}
+Content-Type: application/json
+
+{
+
   "product_id": "1",
   "quantity": "1"
 }
